@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.wrapper{
+    width: 100%;
+}
+.wrapper .container{
+    display: flex;
+}
+.sidebar{
+    width: 250px;
+    height: auto;
+    background-color: black;
+    color: white;
+/*    position: fixed;*/
+}
+/* ============== profile ============== */
+.wrapper .profile{
+    padding: auto 50px;
+    text-align: center;
+    padding-top: 10px;
+    user-select: none;
+}
+.wrapper .profile .profile_top{
+    background: url(../img/bg_sidebar.png) no-repeat;
+    height: 100px;
+    background-size: cover;
+/*    margin-top: 10px;*/
+    padding-top: 10px;
+}
+.wrapper .sidebar .profile .profile_top .name{
+    font: 32px 'Lobster Two';
+}.wrapper .sidebar .profile .profile_top .role{
+    font-weight: bold;
+}
+.wrapper .profile .profile_top .name,
+.wrapper .profile .profile_top .role{
+    background: rgba(255, 255, 255, .1)   
+}
+.wrapper .profile .profile_img{
+    width: 100px;
+    margin: auto;
+    position: relative;
+    top: -15px
+}
+.wrapper .profile .profile_img img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #2e75b7;
+}
+.wrapper .profile .profile_birthday{
+    background: #2e75b7;
+    display: flex;
+}
+.wrapper .profile .profile_birthday > div:first-child{
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+.wrapper .profile .profile_birthday > div{
+    flex-grow: 1;
+}
+.wrapper .profile .profile_birthday > div p{
+    padding: 5px 0 5px 0;
+}
+.wrapper .profile .profile_birthday > div p:first-child{
+    font-weight: bold;   
+}
+
+/* ============== contact ============== */
+.wrapper .sidebar .contact{
+    padding: 10px 40px;
+}
+.wrapper .sidebar .contact ul{
+    display: table;
+}
+.wrapper .sidebar .contact ul li{
+    display: table-row;
+    color: #9dc6e4
+}
+.wrapper .sidebar .contact li i{
+    display: table-cell;
+    padding: 8px;
+    color: #2e75b7;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* ============== desc ============== */
+.wrapper .sidebar .desc-short{
+    background-color: #343434;
+    padding: 15px;
+    text-align: justify;
+    line-height: 18px;
+}
+
+/* ============== achievement ============== */
+
+.wrapper .sidebar .skill{
+}
+
+.wrapper .sidebar .skill .row{
+    margin: 10px 15px 15px 15px;
+}
+.wrapper .sidebar .skill .row > div:first-child{
+    text-transform: uppercase;
+    
+}
+.wrapper .sidebar .skill .row > div:first-child i{
+    background-color: #2e75b7;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.wrapper .sidebar .skill .row .times{
+    padding-left: 12px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.wrapper .sidebar .skill .row .times p{
+    color: #2e75b7;
+    font-weight: bold;
+}
+
+
+.wrapper .sidebar .skill .row .times label{
+    width: 70px;
+    color: #2e75b7;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.wrapper .sidebar .skill .row .progress_item{
+    display: flex;
+/*    border: 1px solid yellow*/
+}
+.wrapper .sidebar .skill .row .times .progress_bar{
+    width: 80px;
+    border-radius: 7px;
+    border: 1px solid #2e75b7;
+    height: 8px;
+    margin-top: 2px
+}
+.wrapper .sidebar .skill .row .times .progress_bar .progress_per{
+    background: #2e75b7;
+    display: block;
+    height: 100%;
+}
+
+
+/* ============== main-content ============== */
+.wrapper .main-content{
+    
+}
+
+.wrapper .main-content img{
+    width: 60%;
+    margin-left: 50px;
+}
